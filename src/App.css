@@ -1,0 +1,14 @@
+.main-container {
+    height: 85%;
+    min-height: 768px;
+    min-width: 1280px;
+}
+
+.book-list--header-container {
+    height: 85%;
+}
+
+.footer {
+    height: 15%;
+    display: block;
+}

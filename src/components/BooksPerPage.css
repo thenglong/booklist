@@ -1,0 +1,8 @@
+.book-list-header {
+    height: 10%;
+}
+
+select.books-per-pages:focus {
+    outline: none;
+    box-shadow: none;
+}

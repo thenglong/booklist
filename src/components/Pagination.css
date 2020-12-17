@@ -1,0 +1,11 @@
+.pagination-container {
+    height: 15%;
+}
+
+li.page-item {
+    cursor: pointer;
+}
+
+li.page-item.active {
+    cursor: initial;
+}

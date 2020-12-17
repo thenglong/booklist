@@ -1,0 +1,19 @@
+.book-details-container {
+    background: rgb(230, 230, 230);
+}
+
+.book-details-header {
+    background: rgb(206, 206, 206);
+}
+
+.book-details-title {
+    opacity: .8
+}
+
+.book-details-content {
+    opacity: .8
+}
+
+.book-details-null {
+    background: rgb(230, 230, 230);
+}
