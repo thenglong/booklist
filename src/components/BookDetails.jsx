@@ -6,7 +6,7 @@ export default function BookDetails({ book }) {
             <div className="d-flex h-50 p-3 book-details-header">
                 <img
                     className="img-thumbnail h-100"
-                    src={process.env.PUBLIC_URL + book.imageLink}
+                    src={process.env.PUBLIC_URL + "/" + book.imageLink}
                     alt={book.title}
                 />
                 <div className="mx-4 d-flex flex-column justify-content-center">
