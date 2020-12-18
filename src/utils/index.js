@@ -6,7 +6,7 @@ const ax = axios.create({
 
 export const populateData = async () => await (await ax.get("/books.json")).data;
 
-export const getCurrentBooks = (books, currentPage, booksPerPages) => {
+export const getCurrentBooks = (books, currentPage = 1, booksPerPages = 20) => {
     const indexOfLastBook = currentPage * booksPerPages;
     const indexOfFirstBook = indexOfLastBook - booksPerPages;
     return books.slice(indexOfFirstBook, indexOfLastBook);

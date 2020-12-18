@@ -1,9 +1,0 @@
-# Assumming python 2
-cd build
-python -m SimpleHTTPServer
-
-# Assumming python 3
-cd build
-python -m http.server  
-
-### Or just open build/index.html

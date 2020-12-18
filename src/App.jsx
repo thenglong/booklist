@@ -5,7 +5,6 @@ import Pagination from "./components/Pagination";
 import BookDetials from "./components/BookDetails";
 import BooksPerPage from "./components/BooksPerPage";
 
-// import { populateData, getBookById } from "./utils/utils";
 import { populateData, getCurrentBooks } from "./utils";
 
 import "./App.css";
@@ -35,7 +34,7 @@ export default function App() {
         setLoading(true);
         setBooksPerPage(size);
         const books = await populateData();
-        setBooks(books, 1, size);
+        setBooks(getCurrentBooks(books, 1, size));
         setCurrentPage(1);
         setTotalPages(Math.ceil(books.length / size));
         setLoading(false);

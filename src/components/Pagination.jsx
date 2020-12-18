@@ -3,6 +3,7 @@ import { getRange } from "../utils/utils";
 import "./Pagination.css";
 
 export default function Pagination({ totalPages, handlePageNumChange, currentPage }) {
+    console.log("total pages from pagination", totalPages);
     const allPages = getRange(1, totalPages);
 
     return (
